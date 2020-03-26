@@ -17,9 +17,10 @@ The README template below provides a starting point with details about what info
 
 ## Description
 
-Briefly tell users why they might want to use your module. Explain what your module does and what kind of problems users can solve with it.
+A set of 3 tasks and one plan use to implelemnt workarounds for the [ADV200006 vulnerability](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV200006). The tasks are to enact the workarounds seperately whereas the plan will perform all 3 tasks.
 
-This should be a fairly short description helps the user decide if your module is what they want.
+**CAUTION:** each of these workarounds removes some functionality, please be aware of the functionality lost before executing the task. Rollback methods are included for accidental execution.
+
 
 ## Setup
 
@@ -33,11 +34,9 @@ If there's more that they should know about, though, this is the place to mentio
 * Dependencies that your module automatically installs.
 * Warnings or other important notices.
 
-### Setup Requirements **OPTIONAL**
+### Setup Requirements 
 
-If your module requires anything extra before setting up (pluginsync enabled, another module, etc.), mention it here.
-
-If your most recent release breaks compatibility or requires particular steps for upgrading, you might want to include an additional "Upgrading" section here.
+This vulnerability is only applicable to Windows version 7, 8.1, RT 8.1, 10 and Windows Server 2008 service pack 2 onwards. Do not use this module for other versions.
 
 ### Beginning with win_adobe_type_workaround
 
@@ -76,12 +75,10 @@ Default: 'medium-loud'.
 
 ## Limitations
 
-In the Limitations section, list any incompatibilities, known issues, or other warnings.
+Each of these workarounds removes some functionality, please be aware of the functionality lost before executing the task. Rollback methods are included for accidental execution.
 
 ## Development
 
-In the Development section, tell other users the ground rules for contributing to your project and how they should submit their work.
+Pull requests are always welcome.
 
-## Release Notes/Contributors/Etc. **Optional**
 
-If you aren't using changelog, put your release notes here (though you should consider using changelog). You can also add any additional sections you feel are necessary or important to include here. Please use the `## ` header.
