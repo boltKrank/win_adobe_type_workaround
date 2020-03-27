@@ -21,6 +21,7 @@ A set of 3 tasks and one plan use to implelemnt workarounds for the [ADV200006 v
 
 **CAUTION:** each of these workarounds removes some functionality, please be aware of the functionality lost before executing the task. Rollback methods are included for accidental execution.
 
+Once the tasks have been run and the immediate workaround is in place, there are declaritive classes to enforce the state, making sure the nodes don't deviate from the fixed state.
 
 ## Setup
 
