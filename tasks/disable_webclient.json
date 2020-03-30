@@ -1,4 +1,10 @@
 {
   "description": "Disables Windows Webclient service",
   "input_method": "stdin"
+    "parameters": {
+    "rollback": {
+      "type": "Boolean",
+      "description": "Whether or not to rollback the workaround"
+    }
+  }
 }
