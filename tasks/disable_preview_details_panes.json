@@ -6,4 +6,5 @@
       "type": "Boolean",
       "description": "Whether or not to rollback the workaround"
     }
+  }
 }
