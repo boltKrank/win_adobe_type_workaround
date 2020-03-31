@@ -1,10 +1,4 @@
 {
   "description": "Disables the preview and details panes from Windows Explorer",
   "input_method": "stdin"
-  "parameters": {
-    "rollback": {
-      "type": "Boolean",
-      "description": "Whether or not to rollback the workaround"
-    }
-  }
 }
