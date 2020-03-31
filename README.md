@@ -45,7 +45,17 @@ The very basic steps needed for a user to get the module up and running. This ca
 
 ## Usage
 
-Include usage examples for common use cases in the **Usage** section. Show your users how to use your module to solve problems, and be sure to include code examples. Include three to five examples of the most important or common tasks a user can accomplish with your module. Show users how to accomplish more complex tasks that involve different types, classes, and functions working in tandem.
+To immediately run the workarounds execute the following two tasks:
+```
+	win_adobe_type_workaround::disable_preview_details_panes
+	win_adobe_type_workaround::disable_webclient
+```
+
+To declaritively enforce the workarounds, allowing Puppet to check that these aren't reverted back each time the Puppet agent runs, add these two lines to a profile:
+```
+	include win_adobe_type_workaround::disable_preview_pane
+	include win_adobe_type_workaround::disable_webclient
+```
 
 ## Reference
 
