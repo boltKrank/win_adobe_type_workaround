@@ -1,14 +1,11 @@
 # win_adobe_type_workaround
 
-Welcome to your new module. A short overview of the generated parts can be found in the PDK documentation at https://puppet.com/pdk/latest/pdk_generating_modules.html .
-
-The README template below provides a starting point with details about what information to include in your README.
+Puppet tasks and manifests to provide a workaround for Windows Vulnerability ADV200006
 
 #### Table of Contents
 
 1. [Description](#description)
-2. [Setup - The basics of getting started with win_adobe_type_workaround](#setup)
-    * [What win_adobe_type_workaround affects](#what-win_adobe_type_workaround-affects)
+2. [Setup](#setup)
     * [Setup requirements](#setup-requirements)
     * [Beginning with win_adobe_type_workaround](#beginning-with-win_adobe_type_workaround)
 3. [Usage - Configuration options and additional functionality](#usage)
@@ -24,16 +21,6 @@ A set of 3 tasks and one plan use to implelemnt workarounds for the [ADV200006 v
 Once the tasks have been run and the immediate workaround is in place, there are declaritive classes to enforce the state, making sure the nodes don't deviate from the fixed state.
 
 ## Setup
-
-### What win_adobe_type_workaround affects **OPTIONAL**
-
-If it's obvious what your module touches, you can skip this section. For example, folks can probably figure out that your mysql_instance module affects their MySQL instances.
-
-If there's more that they should know about, though, this is the place to mention:
-
-* Files, packages, services, or operations that the module will alter, impact, or execute.
-* Dependencies that your module automatically installs.
-* Warnings or other important notices.
 
 ### Setup Requirements 
 
@@ -55,33 +42,6 @@ To declaritively enforce the workarounds, allowing Puppet to check that these ar
 ```
 	include win_adobe_type_workaround::disable_preview_pane
 	include win_adobe_type_workaround::disable_webclient
-```
-
-## Reference
-
-This section is deprecated. Instead, add reference information to your code as Puppet Strings comments, and then use Strings to generate a REFERENCE.md in your module. For details on how to add code comments and generate documentation with Strings, see the Puppet Strings [documentation](https://puppet.com/docs/puppet/latest/puppet_strings.html) and [style guide](https://puppet.com/docs/puppet/latest/puppet_strings_style.html)
-
-If you aren't ready to use Strings yet, manually create a REFERENCE.md in the root of your module directory and list out each of your module's classes, defined types, facts, functions, Puppet tasks, task plans, and resource types and providers, along with the parameters for each.
-
-For each element (class, defined type, function, and so on), list:
-
-  * The data type, if applicable.
-  * A description of what the element does.
-  * Valid values, if the data type doesn't make it obvious.
-  * Default value, if any.
-
-For example:
-
-```
-### `pet::cat`
-
-#### Parameters
-
-##### `meow`
-
-Enables vocalization in your cat. Valid options: 'string'.
-
-Default: 'medium-loud'.
 ```
 
 ## Limitations
